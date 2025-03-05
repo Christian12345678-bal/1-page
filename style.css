@@ -1,0 +1,277 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Truculenta:opsz,wght@12..72,100..900&display=swap");
+/* -------------RESETS------------- */
+/*Resets are used for overwriting default html tag properties*/
+:root {
+  --font: "Truculenta", serif;
+  --clr-dark: #120f0a;;
+  --clr-light: #fff;
+  --clr-primary:  #ffa700;;
+  --clr-gray: #312d26;
+  --clr-brown: #262016;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  scroll-behavior: smooth;
+  list-style: none;
+}
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+body {
+  color: var(--clr-dark);
+  font-family: var(--font);
+  font-size: 1.6rem;
+  overflow-x: hidden;
+  line-height: 1.4;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+article,
+aside,
+footer,
+header,
+nav,
+section,
+time {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 2400px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+
+.color{
+
+    background-color: var(--clr-brown);
+}
+ /* HEADER */
+.header__title{
+    display: flex;
+    color: white;
+    align-content: baseline;
+    
+}
+.header{
+    width: 100%;
+    background-color:  #262016;;
+}
+.header__nav{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    color: var(--clr-light);
+}
+.header__wrapper{
+display: flex;
+flex-direction: row;
+padding: 1rem;
+}
+.header__wrapper h1{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: left;
+}
+.header__nav{
+    position: relative;
+    color: var(--clr-light);
+    top: 3rem;
+    left: 50rem;
+}
+.header__logo h5{
+    font-size: 150%;
+    position: relative;
+    bottom: 6.3rem;
+    left: 10rem;
+}
+
+  /* BANNER */
+  .banner__title h3{
+    font-size: 700%;
+   position: relative;
+   left: 20rem;
+   top:  5rem;
+  }
+  .banner__title{
+    color: var(--clr-light);
+  }
+  .banner__title span{
+    color: var(--clr-primary);
+  }
+ .banner__title .img{
+    position: relative;
+    bottom: 51rem;
+    left: 105rem;
+ }
+ .banner__title .roots{
+    position: relative;
+    right: 80rem;
+    bottom: 4.5rem;
+ }
+ .banner__title .bomba p{
+    position: relative;
+    right: -40rem;
+    top: 20rem;
+ }
+ .banner__title p{
+    position: relative;
+    right: -20rem
+ }
+ .banner__title p{
+    color: var(--clr-light);
+    position: relative;
+    top: 5rem;
+ }
+
+ /* ABOUT US */
+ .about__title h3{
+    color: var(--clr-primary);
+    padding: 5rem;
+    left: 10%;
+    position: relative;
+    bottom: 50rem;
+    font-size: 220%;
+    font-weight: 500;
+ }
+ .about__title p{
+    color: var(--clr-light);
+    padding: 5rem;
+    position: relative;
+    bottom: 55rem;
+    left: 15rem;
+ }
+ .about__title h2{
+    color: var(--clr-light);
+    padding: 5rem;
+    position: relative;
+    bottom: 50rem;
+    left: 95rem;
+ }
+  /* PROGRAMS */
+  .programs__wrapper{
+    position: relative;
+    bottom: 27rem;
+    left: 25rem;
+    display: flex;
+    gap: 8rem;
+  }
+  .programs__title h2{
+    color: var(--clr-primary);
+    font-size: 150%;
+    font-weight: 600;
+    display: flex;
+  }
+  .programs__title h3{
+    color: var(--clr-light);
+    font-size: 250%;
+    font-weight: 500;
+    display: flex;
+  }
+  /* EVENTS */
+  .events__wrapper{
+    background-color: var(--clr-gray);
+  }
+  .events__title h3{
+    color: var(--clr-primary);
+    font-size: 300%;
+    font-weight: 700;
+    display: flex;
+    padding: 5rem;
+  }
+ .events__title img{
+  gap: 1rem;
+  padding: 8rem;
+ }
+.about__title p{
+  display: flex;
+  justify-content:right ;
+  margin-right: 15rem;
+}
