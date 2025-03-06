@@ -118,7 +118,7 @@ a {
   text-decoration: none;
 }
 img {
-  max-width: 100%;
+  max-width: 100%;  
 }
 
 .container {
@@ -147,13 +147,13 @@ img {
 .header__nav{
     display: flex;
     flex-direction: row;
-    gap: 4rem;
+    gap: 1rem;
     color: var(--clr-light);
 }
 .header__wrapper{
 display: flex;
 flex-direction: row;
-padding: 1rem;
+padding: 0.1rem;
 }
 .header__wrapper h1{
     display: flex;
@@ -171,6 +171,9 @@ padding: 1rem;
     position: relative;
     bottom: 6.3rem;
     left: 10rem;
+}
+.header__wrapper img{
+
 }
 
   /* BANNER */
@@ -214,31 +217,51 @@ padding: 1rem;
  /* ABOUT US */
  .about__title h3{
     color: var(--clr-primary);
-    padding: 5rem;
-    left: 10%;
-    position: relative;
-    bottom: 50rem;
+    padding: 1rem;
+    left: 50%;
+    position:relative;
+    bottom: 50;
     font-size: 220%;
-    font-weight: 500;
+    font-weight: 400;
  }
  .about__title p{
     color: var(--clr-light);
     padding: 5rem;
     position: relative;
-    bottom: 55rem;
-    left: 15rem;
+    bottom: 50rem;
+    left: 50rem;
  }
  .about__title h2{
     color: var(--clr-light);
     padding: 5rem;
     position: relative;
-    bottom: 50rem;
+    bottom: 50  rem;
     left: 95rem;
+ }
+ .aboutus__wrapper img{
+  display: grid;
+  padding: 9rem;
+  gap: 5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  bottom: 20;
+  left: 96;
+  right: 50;
+ }
+ .about button{
+  color: var(--clr-light);
+  background-color: var(--clr-primary);
+  border-radius: 20px;
+ }
+ /* CARDS */
+ .cards{
+  display: flex;
+  justify-content:flex-end;
+  flex-direction: row;
  }
   /* PROGRAMS */
   .programs__wrapper{
     position: relative;
-    bottom: 27rem;
+    bottom: 20rem;
     left: 25rem;
     display: flex;
     gap: 8rem;
@@ -255,9 +278,14 @@ padding: 1rem;
     font-weight: 500;
     display: flex;
   }
+  .programs__p{
+    color: var(--clr-light);
+    padding: 50;
+  }
   /* EVENTS */
   .events__wrapper{
     background-color: var(--clr-gray);
+    border-top-right-radius: 10rem;
   }
   .events__title h3{
     color: var(--clr-primary);
@@ -273,5 +301,53 @@ padding: 1rem;
 .about__title p{
   display: flex;
   justify-content:right ;
-  margin-right: 15rem;
+  margin-right: 20rem;
+}
+.cards{
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: var(--clr-light);
+  border-radius: 2rem;
+  display: flex;
+}
+.cards__img{
+  display: block;
+  width: 100;
+  height: 100%;
+  border-radius: 2rem;
+  transition: al 0.5s ease;
+}
+.cards--details{
+  overflow: hidden;
+  width: 24.55rem;
+  padding: 0 2rem;
+  background-color: var(--clr-light);
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+.cards:hover img{
+  transform: scale(1.2);
+  height: 25rem;
+  object-fit: cover;
+  transition: all 0.5 ease-in-out;
+
+}
+.cards--details h5{
+  font-weight: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  line-height: 1.7rem;
+}
+.cards--details p{
+  margin-bottom: 3rem;
+}
+.btn--readmore{
+  font-style: italic;
+  color: var(--clr-primary);
+  font-weight: 700;
 }
